@@ -15,7 +15,7 @@ class PapaNoelNeuron:
         prob = self._sigmoid(z)
         return "🎁 Regalo" if prob >= 0.5 else "🪨 Carbón"
 
-# Ejemplos:
+# Ejemplos de prueba:
 papa_noel = PapaNoelNeuron()
 
 # Niño que se portó bien, escribió carta y decoró
@@ -29,3 +29,4 @@ print([1,0,0], "->", papa_noel.decide([1,0,0]))  # 🎁 Regalo
 
 # Niño que solo escribió carta pero no se portó bien
 print([0,1,0], "->", papa_noel.decide([0,1,0]))  # 🪨 Carbón
+
